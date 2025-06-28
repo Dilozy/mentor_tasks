@@ -172,6 +172,7 @@ class SQLAlchemyQueries:
 def main():
     with SQLAlchemyQueries() as queries:
         res = queries.books_and_authors_in_two_queries()
+        print(res)
 
 if __name__ == "__main__":
     main()
