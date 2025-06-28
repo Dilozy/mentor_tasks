@@ -6,7 +6,7 @@ from sqlalchemy.orm import (sessionmaker, DeclarativeBase,
 from dotenv import load_dotenv
 
 
-load_dotenv()
+load_dotenv(dotenv_path="./.task_5.env")
 
 
 def get_db_url():
