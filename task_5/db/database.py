@@ -12,7 +12,7 @@ load_dotenv()
 def get_db_url():
     url_args = (os.getenv("DB_USER"), os.getenv("DB_PASSWORD"),
             os.getenv("DB_HOST"), os.getenv("DB_PORT"),
-            os.getenv("DB_NAME"))
+            "task_5")
     
     return "postgresql+psycopg://{}:{}@{}:{}/{}".format(*url_args)
 
